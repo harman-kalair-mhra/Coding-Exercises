@@ -21,5 +21,18 @@ myArray.forEach((task) => {
 console.log(pushArray)
 }
 
+// iterating using mapping
+
+const pushArray2 = []
+
+const mapArray = myArray.map(task2 => {
+    if(task2.duration >= 30 && task2.duration < 90){
+        pushArray2.push(task2.name)
+    }
+})
+
+console.log(pushArray2)
+    
+
 forEachloop()
 

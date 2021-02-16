@@ -5,14 +5,30 @@ const myArray = [
     {name : "Travel 20 miles", duration: 90}
 ];
 
+// for loop
+
 function getNames() {
-const testNames = []
+const arrayNames = []
 
 
     for(let i = 0; i < myArray.length; i++){ 
-        testNames.push(myArray[i].name)
+        arrayNames.push(myArray[i].name)
         }
-        console.log(testNames)
+        console.log(arrayNames)
     }
 
-getNames()
+// for Each loop with arrow function
+
+function forEach_loop() {
+    const emptyArray = []
+
+    myArray.forEach((array) => {
+        emptyArray.push(array.name)
+    })
+    
+    console.log(emptyArray)
+}
+
+getNames();
+
+forEach_loop()

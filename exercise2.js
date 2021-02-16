@@ -1,4 +1,5 @@
 // print duration >= 30 and < 90
+// for each loop with arrow function
 
 const myArray = [ 
     {name : "Eat's Breakfast", duration: 15},
@@ -10,7 +11,7 @@ const myArray = [
 function forEachloop() {
 const pushArray = []
 
-myArray.forEach(function(task){
+myArray.forEach((task) => {
     if(task.duration >= 30 && task.duration < 90){
         pushArray.push(task.name)
     }

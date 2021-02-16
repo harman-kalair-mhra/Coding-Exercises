@@ -29,6 +29,19 @@ function forEach_loop() {
     console.log(emptyArray)
 }
 
-getNames();
+// map through an array
 
+function map () {
+
+const emptyArray2 = []
+
+const mapArray = myArray.map(mapping => {
+    emptyArray2.push(mapping.name)
+})
+
+console.log(emptyArray2)
+}
+
+map()
+getNames();
 forEach_loop()

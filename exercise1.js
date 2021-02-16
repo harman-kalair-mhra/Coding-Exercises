@@ -31,7 +31,7 @@ function forEach_loop() {
 
 // map through an array
 
-function map () {
+
 
 const emptyArray2 = []
 
@@ -40,8 +40,8 @@ const mapArray = myArray.map(mapping => {
 })
 
 console.log(emptyArray2)
-}
 
-map()
-getNames();
-forEach_loop()
+
+
+getNames(); // for loop
+forEach_loop() // for Each loop with arrow function

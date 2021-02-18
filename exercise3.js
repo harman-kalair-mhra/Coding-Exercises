@@ -20,7 +20,7 @@ const dailyCost = tasks.reduce((accumulator, current) => accumulator.concat(curr
 dailyCost.map(task => {
     task.duration = task.duration / 60
     if (task.duration >= 2 ) {
-        cost = cost+ task.duration * 25
+        cost = cost+ task.duration * 25 // add task duration to the cost each time.
     }
     
 })
